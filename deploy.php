@@ -60,7 +60,7 @@ set('rsync', [
 	'filter-perdir'=> false,
 	'flags'        => 'rz', // Recursive, with compress
 	'options'      => [ 'delete', 'delete-excluded', 'links', 'no-perms', 'no-owner', 'no-group' ],
-	'timeout'      => 300,
+	'timeout'      => null,
 ]);
 set('rsync_src', getenv('build_root'));
 set('rsync_dest', '{{release_path}}');
